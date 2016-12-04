@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C5362C51DF2B7420027C778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5362C41DF2B7420027C778 /* AppDelegate.swift */; };
+		1C5362C71DF2B7420027C778 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5362C61DF2B7420027C778 /* MainViewController.swift */; };
+		1C5362CA1DF2B7420027C778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5362C81DF2B7420027C778 /* Main.storyboard */; };
+		1C5362CC1DF2B7420027C778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5362CB1DF2B7420027C778 /* Assets.xcassets */; };
+		1C5362CF1DF2B7420027C778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5362CD1DF2B7420027C778 /* LaunchScreen.storyboard */; };
+		1C5362DA1DF2B7420027C778 /* FacebookOauth2SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5362D91DF2B7420027C778 /* FacebookOauth2SwiftTests.swift */; };
+		1C5362E51DF2B7420027C778 /* FacebookOauth2SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5362E41DF2B7420027C778 /* FacebookOauth2SwiftUITests.swift */; };
+		1C5362F41DF3F8080027C778 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5362F31DF3F8080027C778 /* FacebookManager.swift */; };
+		1C53630F1DF3FB580027C778 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5363001DF3FA790027C778 /* OAuthSwift.framework */; };
+		1C5363191DF4227C0027C778 /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5363181DF4227C0027C778 /* ParsingManager.swift */; };
+		1C53631C1DF4245E0027C778 /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
+		1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
+		1C53631F1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
+		1C5363201DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C5362D61DF2B7420027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362B91DF2B7420027C778 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C5362C01DF2B7420027C778;
+			remoteInfo = FacebookOauth2Swift;
+		};
+		1C5362E11DF2B7420027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362B91DF2B7420027C778 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C5362C01DF2B7420027C778;
+			remoteInfo = FacebookOauth2Swift;
+		};
+		1C5362FF1DF3FA790027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F435027A1A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
+		1C5363011DF3FA790027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
+			remoteInfo = OAuthSwiftOSX;
+		};
+		1C5363031DF3FA790027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
+			remoteInfo = OAuthSwiftTVOS;
+		};
+		1C5363051DF3FA790027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C40890C01C11B37000E3146A;
+			remoteInfo = OAuthSwiftWatchOS;
+		};
+		1C5363071DF3FA790027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F451E3C5195B8CD80051434C;
+			remoteInfo = OAuthSwiftDemo;
+		};
+		1C5363091DF3FA790027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
+			remoteInfo = OAuthSwiftOSXDemo;
+		};
+		1C53630B1DF3FA790027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
+			remoteInfo = OAuthSwiftTests;
+		};
+		1C53630D1DF3FB510027C778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F43502791A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C5362C11DF2B7420027C778 /* FacebookOauth2Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookOauth2Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5362C41DF2B7420027C778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C5362C61DF2B7420027C778 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1C5362C91DF2B7420027C778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C5362CB1DF2B7420027C778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C5362CE1DF2B7420027C778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C5362D01DF2B7420027C778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5362D51DF2B7420027C778 /* FacebookOauth2SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookOauth2SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5362D91DF2B7420027C778 /* FacebookOauth2SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookOauth2SwiftTests.swift; sourceTree = "<group>"; };
+		1C5362DB1DF2B7420027C778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5362E01DF2B7420027C778 /* FacebookOauth2SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookOauth2SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5362E41DF2B7420027C778 /* FacebookOauth2SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookOauth2SwiftUITests.swift; sourceTree = "<group>"; };
+		1C5362E61DF2B7420027C778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5362F31DF3F8080027C778 /* FacebookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacebookManager.swift; path = FacebookManager/FacebookManager.swift; sourceTree = "<group>"; };
+		1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = "OAuthSwift-master/OAuthSwift.xcodeproj"; sourceTree = "<group>"; };
+		1C5363181DF4227C0027C778 /* ParsingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParsingManager.swift; path = ParsingManager/ParsingManager.swift; sourceTree = "<group>"; };
+		1C53631B1DF4245E0027C778 /* FacebookImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacebookImage.swift; path = Models/FacebookImage.swift; sourceTree = "<group>"; };
+		1C53631D1DF495A10027C778 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C5362BE1DF2B7420027C778 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C53630F1DF3FB580027C778 /* OAuthSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5362D21DF2B7420027C778 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5362DD1DF2B7420027C778 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C5362B81DF2B7420027C778 = {
+			isa = PBXGroup;
+			children = (
+				1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */,
+				1C5362C31DF2B7420027C778 /* FacebookOauth2Swift */,
+				1C5362D81DF2B7420027C778 /* FacebookOauth2SwiftTests */,
+				1C5362E31DF2B7420027C778 /* FacebookOauth2SwiftUITests */,
+				1C5362C21DF2B7420027C778 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C5362C21DF2B7420027C778 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C5362C11DF2B7420027C778 /* FacebookOauth2Swift.app */,
+				1C5362D51DF2B7420027C778 /* FacebookOauth2SwiftTests.xctest */,
+				1C5362E01DF2B7420027C778 /* FacebookOauth2SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C5362C31DF2B7420027C778 /* FacebookOauth2Swift */ = {
+			isa = PBXGroup;
+			children = (
+				1C5362C41DF2B7420027C778 /* AppDelegate.swift */,
+				1C5362C61DF2B7420027C778 /* MainViewController.swift */,
+				1C53631D1DF495A10027C778 /* PhotosViewController.swift */,
+				1C5362C81DF2B7420027C778 /* Main.storyboard */,
+				1C5362F21DF3F7DB0027C778 /* FacebookManager */,
+				1C5363171DF422550027C778 /* ParsingManager */,
+				1C53631A1DF4243A0027C778 /* Models */,
+				1C5362CB1DF2B7420027C778 /* Assets.xcassets */,
+				1C5362CD1DF2B7420027C778 /* LaunchScreen.storyboard */,
+				1C5362D01DF2B7420027C778 /* Info.plist */,
+			);
+			path = FacebookOauth2Swift;
+			sourceTree = "<group>";
+		};
+		1C5362D81DF2B7420027C778 /* FacebookOauth2SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C5362D91DF2B7420027C778 /* FacebookOauth2SwiftTests.swift */,
+				1C5362DB1DF2B7420027C778 /* Info.plist */,
+			);
+			path = FacebookOauth2SwiftTests;
+			sourceTree = "<group>";
+		};
+		1C5362E31DF2B7420027C778 /* FacebookOauth2SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C5362E41DF2B7420027C778 /* FacebookOauth2SwiftUITests.swift */,
+				1C5362E61DF2B7420027C778 /* Info.plist */,
+			);
+			path = FacebookOauth2SwiftUITests;
+			sourceTree = "<group>";
+		};
+		1C5362F21DF3F7DB0027C778 /* FacebookManager */ = {
+			isa = PBXGroup;
+			children = (
+				1C5362F31DF3F8080027C778 /* FacebookManager.swift */,
+			);
+			name = FacebookManager;
+			sourceTree = "<group>";
+		};
+		1C5362F61DF3FA790027C778 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C5363001DF3FA790027C778 /* OAuthSwift.framework */,
+				1C5363021DF3FA790027C778 /* OAuthSwift.framework */,
+				1C5363041DF3FA790027C778 /* OAuthSwift.framework */,
+				1C5363061DF3FA790027C778 /* OAuthSwift.framework */,
+				1C5363081DF3FA790027C778 /* OAuthSwiftDemo.app */,
+				1C53630A1DF3FA790027C778 /* OAuthSwiftOSXDemo.app */,
+				1C53630C1DF3FA790027C778 /* OAuthSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C5363171DF422550027C778 /* ParsingManager */ = {
+			isa = PBXGroup;
+			children = (
+				1C5363181DF4227C0027C778 /* ParsingManager.swift */,
+			);
+			name = ParsingManager;
+			sourceTree = "<group>";
+		};
+		1C53631A1DF4243A0027C778 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C53631B1DF4245E0027C778 /* FacebookImage.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C5362C01DF2B7420027C778 /* FacebookOauth2Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5362E91DF2B7420027C778 /* Build configuration list for PBXNativeTarget "FacebookOauth2Swift" */;
+			buildPhases = (
+				1C5362BD1DF2B7420027C778 /* Sources */,
+				1C5362BE1DF2B7420027C778 /* Frameworks */,
+				1C5362BF1DF2B7420027C778 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C53630E1DF3FB510027C778 /* PBXTargetDependency */,
+			);
+			name = FacebookOauth2Swift;
+			productName = FacebookOauth2Swift;
+			productReference = 1C5362C11DF2B7420027C778 /* FacebookOauth2Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C5362D41DF2B7420027C778 /* FacebookOauth2SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5362EC1DF2B7420027C778 /* Build configuration list for PBXNativeTarget "FacebookOauth2SwiftTests" */;
+			buildPhases = (
+				1C5362D11DF2B7420027C778 /* Sources */,
+				1C5362D21DF2B7420027C778 /* Frameworks */,
+				1C5362D31DF2B7420027C778 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C5362D71DF2B7420027C778 /* PBXTargetDependency */,
+			);
+			name = FacebookOauth2SwiftTests;
+			productName = FacebookOauth2SwiftTests;
+			productReference = 1C5362D51DF2B7420027C778 /* FacebookOauth2SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C5362DF1DF2B7420027C778 /* FacebookOauth2SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5362EF1DF2B7420027C778 /* Build configuration list for PBXNativeTarget "FacebookOauth2SwiftUITests" */;
+			buildPhases = (
+				1C5362DC1DF2B7420027C778 /* Sources */,
+				1C5362DD1DF2B7420027C778 /* Frameworks */,
+				1C5362DE1DF2B7420027C778 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C5362E21DF2B7420027C778 /* PBXTargetDependency */,
+			);
+			name = FacebookOauth2SwiftUITests;
+			productName = FacebookOauth2SwiftUITests;
+			productReference = 1C5362E01DF2B7420027C778 /* FacebookOauth2SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C5362B91DF2B7420027C778 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Rohan Sonawane";
+				TargetAttributes = {
+					1C5362C01DF2B7420027C778 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1C5362D41DF2B7420027C778 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1C5362C01DF2B7420027C778;
+					};
+					1C5362DF1DF2B7420027C778 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1C5362C01DF2B7420027C778;
+					};
+				};
+			};
+			buildConfigurationList = 1C5362BC1DF2B7420027C778 /* Build configuration list for PBXProject "FacebookOauth2Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C5362B81DF2B7420027C778;
+			productRefGroup = 1C5362C21DF2B7420027C778 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1C5362F61DF3FA790027C778 /* Products */;
+					ProjectRef = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1C5362C01DF2B7420027C778 /* FacebookOauth2Swift */,
+				1C5362D41DF2B7420027C778 /* FacebookOauth2SwiftTests */,
+				1C5362DF1DF2B7420027C778 /* FacebookOauth2SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1C5363001DF3FA790027C778 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 1C5362FF1DF3FA790027C778 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C5363021DF3FA790027C778 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 1C5363011DF3FA790027C778 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C5363041DF3FA790027C778 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 1C5363031DF3FA790027C778 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C5363061DF3FA790027C778 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 1C5363051DF3FA790027C778 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C5363081DF3FA790027C778 /* OAuthSwiftDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftDemo.app;
+			remoteRef = 1C5363071DF3FA790027C778 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C53630A1DF3FA790027C778 /* OAuthSwiftOSXDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftOSXDemo.app;
+			remoteRef = 1C5363091DF3FA790027C778 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C53630C1DF3FA790027C778 /* OAuthSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuthSwiftTests.xctest;
+			remoteRef = 1C53630B1DF3FA790027C778 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C5362BF1DF2B7420027C778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5362CF1DF2B7420027C778 /* LaunchScreen.storyboard in Resources */,
+				1C5362CC1DF2B7420027C778 /* Assets.xcassets in Resources */,
+				1C5362CA1DF2B7420027C778 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5362D31DF2B7420027C778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5362DE1DF2B7420027C778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C5362BD1DF2B7420027C778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5362F41DF3F8080027C778 /* FacebookManager.swift in Sources */,
+				1C5362C71DF2B7420027C778 /* MainViewController.swift in Sources */,
+				1C5363191DF4227C0027C778 /* ParsingManager.swift in Sources */,
+				1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */,
+				1C5362C51DF2B7420027C778 /* AppDelegate.swift in Sources */,
+				1C53631C1DF4245E0027C778 /* FacebookImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5362D11DF2B7420027C778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5362DA1DF2B7420027C778 /* FacebookOauth2SwiftTests.swift in Sources */,
+				1C53631F1DF495A10027C778 /* PhotosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5362DC1DF2B7420027C778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5362E51DF2B7420027C778 /* FacebookOauth2SwiftUITests.swift in Sources */,
+				1C5363201DF495A10027C778 /* PhotosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C5362D71DF2B7420027C778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C5362C01DF2B7420027C778 /* FacebookOauth2Swift */;
+			targetProxy = 1C5362D61DF2B7420027C778 /* PBXContainerItemProxy */;
+		};
+		1C5362E21DF2B7420027C778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C5362C01DF2B7420027C778 /* FacebookOauth2Swift */;
+			targetProxy = 1C5362E11DF2B7420027C778 /* PBXContainerItemProxy */;
+		};
+		1C53630E1DF3FB510027C778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			targetProxy = 1C53630D1DF3FB510027C778 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C5362C81DF2B7420027C778 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C5362C91DF2B7420027C778 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C5362CD1DF2B7420027C778 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C5362CE1DF2B7420027C778 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C5362E71DF2B7420027C778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C5362E81DF2B7420027C778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C5362EA1DF2B7420027C778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FacebookOauth2Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohan.FacebookOauth2Swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1C5362EB1DF2B7420027C778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FacebookOauth2Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohan.FacebookOauth2Swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1C5362ED1DF2B7420027C778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FacebookOauth2SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohan.FacebookOauth2SwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FacebookOauth2Swift.app/FacebookOauth2Swift";
+			};
+			name = Debug;
+		};
+		1C5362EE1DF2B7420027C778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FacebookOauth2SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohan.FacebookOauth2SwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FacebookOauth2Swift.app/FacebookOauth2Swift";
+			};
+			name = Release;
+		};
+		1C5362F01DF2B7420027C778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FacebookOauth2SwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohan.FacebookOauth2SwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FacebookOauth2Swift;
+			};
+			name = Debug;
+		};
+		1C5362F11DF2B7420027C778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FacebookOauth2SwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohan.FacebookOauth2SwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FacebookOauth2Swift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C5362BC1DF2B7420027C778 /* Build configuration list for PBXProject "FacebookOauth2Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5362E71DF2B7420027C778 /* Debug */,
+				1C5362E81DF2B7420027C778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C5362E91DF2B7420027C778 /* Build configuration list for PBXNativeTarget "FacebookOauth2Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5362EA1DF2B7420027C778 /* Debug */,
+				1C5362EB1DF2B7420027C778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C5362EC1DF2B7420027C778 /* Build configuration list for PBXNativeTarget "FacebookOauth2SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5362ED1DF2B7420027C778 /* Debug */,
+				1C5362EE1DF2B7420027C778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C5362EF1DF2B7420027C778 /* Build configuration list for PBXNativeTarget "FacebookOauth2SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5362F01DF2B7420027C778 /* Debug */,
+				1C5362F11DF2B7420027C778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C5362B91DF2B7420027C778 /* Project object */;
+}

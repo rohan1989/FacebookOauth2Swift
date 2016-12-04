@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TMv-IL-bKQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LOGIN-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="FacebookOauth2Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zts-99-ENP">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rs8-kv-uKO"/>
+                                </constraints>
+                                <state key="normal" title="Login With Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithFacebookButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pX-da-hQN"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="uKA-mT-g1z">
+                                <rect key="frame" x="177.5" y="290" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="i9E-Bo-h3R"/>
+                                    <constraint firstAttribute="width" constant="20" id="sJH-mh-DLD"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36118459800000002" green="0.54058458269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uKA-mT-g1z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Bs-20-BcT"/>
+                            <constraint firstItem="Zts-99-ENP" firstAttribute="top" secondItem="uKA-mT-g1z" secondAttribute="bottom" constant="8" id="Wfr-IW-9mO"/>
+                            <constraint firstItem="Zts-99-ENP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aH6-XN-WBZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Zts-99-ENP" secondAttribute="trailing" constant="16" id="hfJ-dE-LDl"/>
+                            <constraint firstItem="Zts-99-ENP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="lma-WH-S85"/>
+                            <constraint firstItem="Zts-99-ENP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o04-VE-jZY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LOGIN" id="8ef-wA-FPh">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="4RB-b4-Bs5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="uKA-mT-g1z" id="gFN-am-goS"/>
+                        <outlet property="loginWithFacebookButton" destination="Zts-99-ENP" id="tJ7-tY-9ju"/>
+                        <segue destination="8gg-A7-qij" kind="show" identifier="showPhotosView" id="KBq-3R-2Ws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--PHOTOS-->
+        <scene sceneID="0ZY-dR-KgC">
+            <objects>
+                <viewController title="PHOTOS" id="8gg-A7-qij" customClass="PhotosViewController" customModule="FacebookOauth2Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xxw-OK-lDF"/>
+                        <viewControllerLayoutGuide type="bottom" id="qjX-5W-zZT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hUP-ax-r7P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3D-4f-bDY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36118459800000002" green="0.54058458269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="leading" secondItem="hUP-ax-r7P" secondAttribute="leading" id="CoT-ms-oJp"/>
+                            <constraint firstAttribute="trailing" secondItem="Z3D-4f-bDY" secondAttribute="trailing" id="mel-ee-muU"/>
+                            <constraint firstItem="qjX-5W-zZT" firstAttribute="top" secondItem="Z3D-4f-bDY" secondAttribute="bottom" id="prq-Cu-cXc"/>
+                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="top" secondItem="hUP-ax-r7P" secondAttribute="top" id="qJE-uz-Vvj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageScrollView" destination="Z3D-4f-bDY" id="gjB-xj-dDt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tw9-05-BZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uog-jz-aBg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TMv-IL-bKQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tOo-eO-VRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ChM-gg-3CJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hP3-SB-ps8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
