@@ -8,8 +8,12 @@
 
 import UIKit
 
+struct MainViewControllerConstants {
+    static let photosSegueIdentifier = "showPhotosView"
+}
 class MainViewController: UIViewController {
 
+    //store "FacebookImage" objects
     var imagesArray:Array<FacebookImage>?
     
     @IBOutlet weak var loginWithFacebookButton: UIButton!
@@ -26,17 +30,34 @@ class MainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if "showPhotosView" == segue.identifier {
+        if MainViewControllerConstants.photosSegueIdentifier == segue.identifier {
             let destinationViewController = segue.destination as! PhotosViewController
             destinationViewController.imagesArray = sender as! Array<FacebookImage>?
         }
     }
 
     // MARK: ---------- Private Functions ----------
+    
+    /**
+     Push PhotosViewController
+     
+     @param None.
+     
+     @return None.
+     */
     private func seePhotosViewController(){
-            self.performSegue(withIdentifier: "showPhotosView", sender: self.imagesArray)
+            self.performSegue(withIdentifier: MainViewControllerConstants.photosSegueIdentifier, sender: self.imagesArray)
     }
     
+    /**
+     Generalise method to show alerts
+     
+     @param title -- Alert Title.
+     
+     @param message -- Alert message.
+     
+     @return None.
+     */
     private func showAlert(title:String, message:String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
@@ -46,6 +67,7 @@ class MainViewController: UIViewController {
     // MARK: ---------- Button Actions ----------
     @IBAction func loginWithFacebookButtonAction(_ sender: Any) {
         
+        //check empty array
         if self.imagesArray?.count != nil{
             self.seePhotosViewController()
             return

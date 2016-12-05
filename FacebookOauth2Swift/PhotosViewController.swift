@@ -10,15 +10,13 @@ import UIKit
 
 class PhotosViewController: UIViewController {
 
+    //store "FacebookImage" objects
     var imagesArray:Array<FacebookImage>?
+    
     @IBOutlet weak var imageScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for facebookImage:FacebookImage in (imagesArray)!{
-            print(facebookImage.imageSource!)
-        }
         self.addImagesToScrollView()
     }
 
@@ -28,6 +26,15 @@ class PhotosViewController: UIViewController {
     }
 
     // MARK: ---------- Private Functions ----------
+    /**
+     Download facebook image data using URLSession
+     
+     @param url -- Image URL.
+     
+     @param completion -- gets image data, response and error.
+     
+     @return None.
+     */
     private func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
         URLSession.shared.dataTask(with: url) {
             (data, response, error) in
@@ -35,8 +42,18 @@ class PhotosViewController: UIViewController {
             }.resume()
     }
     
+    /**
+     Add UIImageView's on Scroll view
+     
+     @param None.
+     
+     @return None.
+     */
     private func addImagesToScrollView(){
+        //image X offset
         var imageX:CGFloat = 10.0
+        
+        //image height offset
         let heightOffset:CGFloat = 100.0
         
         for facebookImage:FacebookImage in imagesArray! {
@@ -62,6 +79,13 @@ class PhotosViewController: UIViewController {
         imageScrollView.contentSize = size
     }
     
+    /**
+     Add shadow to images
+     
+     @param view - A UIView object.
+     
+     @return None.
+     */
     private func addShadow(view:UIView){
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 1

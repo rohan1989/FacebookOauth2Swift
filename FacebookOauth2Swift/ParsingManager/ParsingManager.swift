@@ -8,6 +8,17 @@
 
 import UIKit
 
+/**
+ Parsing Manager Constants.
+ 
+ - dataKey: Data Key.
+ - imagesKey: Images Key.
+ - idKey: ID Key.
+ - widthKey: Width Key.
+ - heightKey: Height Key
+ - sourceKey: Source Key.
+ - errorDomain: Error Domain
+ */
 struct ParsingManagerConstants {
     static let dataKey = "data"
     static let imagesKey = "images"
@@ -20,6 +31,15 @@ struct ParsingManagerConstants {
 
 open class ParsingManager: NSObject {
 
+    /**
+     Used to parse facebook photos reponse
+     
+     @param responseData Raw data from facebook
+     
+     @param completionWithPhotos Gets photos array and error
+     
+     @return None.
+     */
     func parseFacebookPhotos(responseData:Data, completionWithPhotos: @escaping (_ photosArray: Array<FacebookImage>?, _ error:NSError?) -> Void) {
         let json = try? JSONSerialization.jsonObject(with: responseData, options: [])
         
@@ -30,7 +50,6 @@ open class ParsingManager: NSObject {
                 
                 for i in 0 ..< dataArray.count {
                     let dictResult = dataArray.object(at: i) as! NSDictionary
-                    print(dictResult)
                     let image:FacebookImage = FacebookImage()
                     image.imageID = dictResult[ParsingManagerConstants.idKey] as? String
                     
