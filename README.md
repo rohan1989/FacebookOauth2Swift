@@ -6,14 +6,14 @@ Clone or download this repository and build using xcode 8 or later.
 
 
 ### Prerequisites
-Get facebook App ID and App Secret by creating an application on facebook developer portal
+Get facebook App ID and App Secret by creating an application on facebook developer page.
 
-## Built With
+### Built With
 * [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) - Swift based OAuth library for iOS
 
 ## Authors
 
-* **Rohan Sonawane** - *Initial Logic* - [rohan1989](https://github.com/rohan1989)
+* **Rohan Sonawane** - *Initial Work* - [rohan1989](https://github.com/rohan1989)
 
 ## License
 
