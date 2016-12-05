@@ -2,7 +2,8 @@
 Get Facebook photos using Oauth2Swift.
 
 ## Getting Started
-Clone or download this repository and build using xcode 8 or later.
+* Clone or download this repository and build using xcode 8 or later.
+* Tested using xcode 8.1, Deployment target 10.1 on simulators 6s, 6s plus, 7 and 7 plus.
 
 
 ### Prerequisites
