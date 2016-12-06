@@ -31,15 +31,16 @@ class GraphViewController: UIViewController {
         super.viewDidLoad()
         
         self.tabBarController?.tabBar.isHidden = true
-        self.title = city
         
         for item in weatherArray! {
             let weatherForecast:WeatherForecast = item as WeatherForecast
+            city = weatherForecast.city
             let str:String = item.date!
             dateArray?.append(str)
             temperatureArray?.append(weatherForecast.minimumTemperature!)
         }
         
+        self.title = city
         setChart(dataPoints: dateArray!, values: temperatureArray!)
     }
 
@@ -56,7 +57,7 @@ class GraphViewController: UIViewController {
     
     func setChart(dataPoints: [String], values: [Double]) {
         barChartView.noDataText = "You need to provide data for the chart."
-        barChartView.chartDescription?.text = ""
+        barChartView.chartDescription?.text = "Date On X-Axis and Temperature On Y-Axis"
         barChartView.xAxis.labelPosition = .bothSided
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
         barChartView.rightAxis.drawGridLinesEnabled = false

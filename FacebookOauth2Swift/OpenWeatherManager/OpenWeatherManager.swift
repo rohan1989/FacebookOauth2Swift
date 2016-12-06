@@ -22,7 +22,12 @@ class OpenWeatherManager: NSObject {
                 //parse facebook response
                 let parsingManager = ParsingManager()
                 parsingManager.parseWeatherForecast(responseData: data!, completionWithWeatherArray: {weatherArray, error in
-                    completionWithWeatherArray(weatherArray!, error)
+                    if weatherArray != nil{
+                        completionWithWeatherArray(weatherArray!, error)
+                    }
+                    else{
+                        completionWithWeatherArray(nil, error)
+                    }
                 })
             }
             else{

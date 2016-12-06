@@ -92,6 +92,11 @@ open class ParsingManager: NSObject {
                     let dictMain = dictResult["main"] as! NSDictionary
                     forecast.minimumTemperature = dictMain["temp_min"] as? Double
                     
+                    if dictionary["city"] != nil{
+                        let dictCity = dictionary["city"] as! NSDictionary
+                        forecast.city = dictCity["name"] as? String
+                    }
+                    
                     if(currentDate != forecast.date){
                         weatherArray.append(forecast)
                         currentDate = forecast.date!

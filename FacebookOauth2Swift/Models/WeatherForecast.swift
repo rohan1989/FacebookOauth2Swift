@@ -11,4 +11,5 @@ import UIKit
 class WeatherForecast: NSObject {
     var minimumTemperature:Double?
     var date:String?
+    var city:String?
 }
