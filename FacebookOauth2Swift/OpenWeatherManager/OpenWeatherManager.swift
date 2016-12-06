@@ -13,7 +13,14 @@ class OpenWeatherManager: NSObject {
     let openWeatherURL:String! = nil
     
     func getWeatherForCity(city:String, completionWithWeatherArray: @escaping (_ weatherArray: Array<Any>?, _ error:NSError?) -> Void) {
-        let url = NSURL(string:"http://api.openweathermap.org/data/2.5/forecast?q=\(city)&mode=json&appid=8afb80469c1d3ed26ae2cd3162b56c82&units=metric")
+        let trimmedString = city.trimmingCharacters(in: .whitespaces)
+
+        let url: NSURL? = NSURL(string:"http://api.openweathermap.org/data/2.5/forecast?q=\(trimmedString)&mode=json&appid=8afb80469c1d3ed26ae2cd3162b56c82&units=metric")
+        
+        if url == nil{
+            completionWithWeatherArray(nil, NSError(domain: "Enter a valid city. ", code: 111, userInfo: nil))
+            return
+        }
         
         getDataFromUrl(url: url as! URL) { (data, response, error)  in
             
