@@ -98,7 +98,7 @@ open class FacebookManager: NSObject {
             //parse facebook response
             let parsingManager = ParsingManager()
             parsingManager.parseFacebookPhotos(responseData: responseData, completionWithPhotos: {photosArray, error in
-                completionWithPhotos(photosArray!, NSError(domain: "", code: 222, userInfo: nil))
+                completionWithPhotos(photosArray!, error)
             })
         }, failure: { error in
             completionWithPhotos(nil, NSError(domain: error.localizedDescription, code: 111, userInfo: nil))

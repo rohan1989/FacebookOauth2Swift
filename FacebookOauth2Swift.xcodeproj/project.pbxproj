@@ -21,6 +21,11 @@
 		1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
 		1C53631F1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
 		1C5363201DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
+		1C68A1E01DF6A547009A924C /* GraphRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A1DF1DF6A547009A924C /* GraphRootViewController.swift */; };
+		1C68A1E81DF6A7BB009A924C /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A1E71DF6A7BB009A924C /* GraphViewController.swift */; };
+		1C68A2031DF6AAE4009A924C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C68A1FC1DF6AAD3009A924C /* Charts.framework */; };
+		1C68A2061DF6AD7A009A924C /* OpenWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A2051DF6AD7A009A924C /* OpenWeatherManager.swift */; };
+		1C68A2081DF6B213009A924C /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A2071DF6B213009A924C /* WeatherForecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,34 @@
 			remoteGlobalIDString = F43502791A6791B200038A29;
 			remoteInfo = OAuthSwift;
 		};
+		1C68A1FB1DF6AAD3009A924C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		1C68A1FD1DF6AAD3009A924C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		1C68A1FF1DF6AAD3009A924C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		1C68A2011DF6AAE0009A924C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +148,11 @@
 		1C5363181DF4227C0027C778 /* ParsingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParsingManager.swift; path = ParsingManager/ParsingManager.swift; sourceTree = "<group>"; };
 		1C53631B1DF4245E0027C778 /* FacebookImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacebookImage.swift; path = Models/FacebookImage.swift; sourceTree = "<group>"; };
 		1C53631D1DF495A10027C778 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		1C68A1DF1DF6A547009A924C /* GraphRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphRootViewController.swift; sourceTree = "<group>"; };
+		1C68A1E71DF6A7BB009A924C /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		1C68A2051DF6AD7A009A924C /* OpenWeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenWeatherManager.swift; path = OpenWeatherManager/OpenWeatherManager.swift; sourceTree = "<group>"; };
+		1C68A2071DF6B213009A924C /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherForecast.swift; path = Models/WeatherForecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C68A2031DF6AAE4009A924C /* Charts.framework in Frameworks */,
 				1C53630F1DF3FB580027C778 /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +185,7 @@
 		1C5362B81DF2B7420027C778 = {
 			isa = PBXGroup;
 			children = (
+				1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */,
 				1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */,
 				1C5362C31DF2B7420027C778 /* FacebookOauth2Swift */,
 				1C5362D81DF2B7420027C778 /* FacebookOauth2SwiftTests */,
@@ -170,7 +210,10 @@
 				1C5362C41DF2B7420027C778 /* AppDelegate.swift */,
 				1C5362C61DF2B7420027C778 /* MainViewController.swift */,
 				1C53631D1DF495A10027C778 /* PhotosViewController.swift */,
+				1C68A1DF1DF6A547009A924C /* GraphRootViewController.swift */,
+				1C68A1E71DF6A7BB009A924C /* GraphViewController.swift */,
 				1C5362C81DF2B7420027C778 /* Main.storyboard */,
+				1C68A2041DF6AD49009A924C /* OpenWeatherManager */,
 				1C5362F21DF3F7DB0027C778 /* FacebookManager */,
 				1C5363171DF422550027C778 /* ParsingManager */,
 				1C53631A1DF4243A0027C778 /* Models */,
@@ -233,8 +276,27 @@
 			isa = PBXGroup;
 			children = (
 				1C53631B1DF4245E0027C778 /* FacebookImage.swift */,
+				1C68A2071DF6B213009A924C /* WeatherForecast.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		1C68A1F61DF6AAD3009A924C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C68A1FC1DF6AAD3009A924C /* Charts.framework */,
+				1C68A1FE1DF6AAD3009A924C /* ChartsRealm.framework */,
+				1C68A2001DF6AAD3009A924C /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C68A2041DF6AD49009A924C /* OpenWeatherManager */ = {
+			isa = PBXGroup;
+			children = (
+				1C68A2051DF6AD7A009A924C /* OpenWeatherManager.swift */,
+			);
+			name = OpenWeatherManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +313,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1C68A2021DF6AAE0009A924C /* PBXTargetDependency */,
 				1C53630E1DF3FB510027C778 /* PBXTargetDependency */,
 			);
 			name = FacebookOauth2Swift;
@@ -333,6 +396,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 1C68A1F61DF6AAD3009A924C /* Products */;
+					ProjectRef = 1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */;
+				},
+				{
 					ProductGroup = 1C5362F61DF3FA790027C778 /* Products */;
 					ProjectRef = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
 				},
@@ -396,6 +463,27 @@
 			remoteRef = 1C53630B1DF3FA790027C778 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		1C68A1FC1DF6AAD3009A924C /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 1C68A1FB1DF6AAD3009A924C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C68A1FE1DF6AAD3009A924C /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 1C68A1FD1DF6AAD3009A924C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C68A2001DF6AAD3009A924C /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 1C68A1FF1DF6AAD3009A924C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -431,9 +519,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5362F41DF3F8080027C778 /* FacebookManager.swift in Sources */,
+				1C68A2081DF6B213009A924C /* WeatherForecast.swift in Sources */,
+				1C68A2061DF6AD7A009A924C /* OpenWeatherManager.swift in Sources */,
 				1C5362C71DF2B7420027C778 /* MainViewController.swift in Sources */,
+				1C68A1E01DF6A547009A924C /* GraphRootViewController.swift in Sources */,
 				1C5363191DF4227C0027C778 /* ParsingManager.swift in Sources */,
 				1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */,
+				1C68A1E81DF6A7BB009A924C /* GraphViewController.swift in Sources */,
 				1C5362C51DF2B7420027C778 /* AppDelegate.swift in Sources */,
 				1C53631C1DF4245E0027C778 /* FacebookImage.swift in Sources */,
 			);
@@ -474,6 +566,11 @@
 			isa = PBXTargetDependency;
 			name = OAuthSwift;
 			targetProxy = 1C53630D1DF3FB510027C778 /* PBXContainerItemProxy */;
+		};
+		1C68A2021DF6AAE0009A924C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 1C68A2011DF6AAE0009A924C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
