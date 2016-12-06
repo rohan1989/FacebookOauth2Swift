@@ -1,6 +1,6 @@
 # FacebookOauth2Swift
  * Get Facebook photos using Oauth2Swift.
- * App uses OpenWeatherMap API to get 5 day forecast and show a graph(Date vs Temperature) using [Charts](https://github.com/danielgindi/Charts. 
+ * App uses OpenWeatherMap API to get 5 day forecast and show a graph(Date vs Temperature) using [Charts](https://github.com/danielgindi/Charts). 
 
 ## Getting Started
 * Clone or download this repository and build using xcode 8 or later.
