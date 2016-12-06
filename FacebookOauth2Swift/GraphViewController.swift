@@ -30,6 +30,7 @@ class GraphViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tabBarController?.tabBar.isHidden = true
         self.title = city
         
         for item in weatherArray! {
@@ -42,6 +43,11 @@ class GraphViewController: UIViewController {
         setChart(dataPoints: dateArray!, values: temperatureArray!)
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

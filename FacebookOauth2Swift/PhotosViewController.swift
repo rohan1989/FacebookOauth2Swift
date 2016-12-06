@@ -17,9 +17,15 @@ class PhotosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.isHidden = true
         self.addImagesToScrollView()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -54,7 +60,7 @@ class PhotosViewController: UIViewController {
         var imageX:CGFloat = 10.0
         
         //image height offset
-        let heightOffset:CGFloat = 100.0
+        let heightOffset:CGFloat = 200.0
         
         for facebookImage:FacebookImage in imagesArray! {
             let rect = CGRect(x: imageX, y: 20, width: UIScreen.main.bounds.size.width - 20, height: UIScreen.main.bounds.size.height - heightOffset)

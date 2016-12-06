@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class FacebookImage: NSObject {
+class FacebookImage: NSObject {
     var imageHeight:String?
     var imageWidth:String?
     var imageSource:String?

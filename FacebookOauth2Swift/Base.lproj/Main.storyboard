@@ -81,18 +81,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3D-4f-bDY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.36118459800000002" green="0.54058458269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="leading" secondItem="hUP-ax-r7P" secondAttribute="leading" id="CoT-ms-oJp"/>
-                            <constraint firstAttribute="trailing" secondItem="Z3D-4f-bDY" secondAttribute="trailing" id="mel-ee-muU"/>
-                            <constraint firstItem="qjX-5W-zZT" firstAttribute="top" secondItem="Z3D-4f-bDY" secondAttribute="bottom" id="prq-Cu-cXc"/>
-                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="top" secondItem="hUP-ax-r7P" secondAttribute="top" id="qJE-uz-Vvj"/>
+                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="top" secondItem="Xxw-OK-lDF" secondAttribute="bottom" id="FrO-4c-vPK"/>
+                            <constraint firstItem="qjX-5W-zZT" firstAttribute="top" secondItem="Z3D-4f-bDY" secondAttribute="bottom" id="Rr3-vC-EBY"/>
+                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="leading" secondItem="hUP-ax-r7P" secondAttribute="leading" id="ZAq-KV-MI8"/>
+                            <constraint firstAttribute="trailing" secondItem="Z3D-4f-bDY" secondAttribute="trailing" id="b4y-wV-zUh"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageScrollView" destination="Z3D-4f-bDY" id="gjB-xj-dDt"/>
                     </connections>
@@ -105,7 +106,7 @@
         <scene sceneID="Uog-jz-aBg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TMv-IL-bKQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Facebook" id="62C-Sg-t1z"/>
+                    <tabBarItem key="tabBarItem" title="Facebook" image="facebook" id="62C-Sg-t1z"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tOo-eO-VRQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -124,7 +125,7 @@
         <scene sceneID="bIb-0H-feQ">
             <objects>
                 <navigationController id="fk9-Kj-0fG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Graph" id="4p1-8F-Fzp"/>
+                    <tabBarItem key="tabBarItem" title="Graph" image="graph" id="4p1-8F-Fzp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5kM-cG-EZR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -235,9 +236,10 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PDW-X1-dAH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="HoX-Nf-cXF">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="HoX-Nf-cXF">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="TMv-IL-bKQ" kind="relationship" relationship="viewControllers" id="GvZ-p4-REA"/>
@@ -249,4 +251,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook" width="16" height="16"/>
+        <image name="graph" width="12" height="12"/>
+    </resources>
 </document>
