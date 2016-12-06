@@ -64,7 +64,7 @@ class GraphViewController: UIViewController {
         barChartView.rightAxis.drawAxisLineEnabled = false
         barChartView.rightAxis.drawLabelsEnabled = false
         barChartView?.xAxis.wordWrapEnabled = true
-        barChartView?.xAxis.setLabelCount(12, force: false)
+        barChartView?.xAxis.setLabelCount(5, force: true)
         
         var dataEntries: [BarChartDataEntry] = []
         let formato:BarChartFormatter = BarChartFormatter()

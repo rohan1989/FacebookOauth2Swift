@@ -175,7 +175,7 @@
                                     <action selector="showWeatherButtonAction:" destination="eB8-RP-JHo" eventType="touchUpInside" id="nSd-s5-aJV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App uses OpenWeather API to get 5 day forecast at any location or city" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXU-fy-OYc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App uses OpenWeatherMap API to get 5 day forecast at any location or city" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXU-fy-OYc">
                                 <rect key="frame" x="16" y="170" width="343" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="qh5-ue-WkZ"/>
