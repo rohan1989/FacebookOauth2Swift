@@ -1,6 +1,7 @@
 # FacebookOauth2Swift
  * Get Facebook photos using Oauth2Swift.
  * App uses [OpenWeatherMap](http://openweathermap.org/api) API to get 5 day forecast and show a graph(Date vs Temperature) using [Charts](https://github.com/danielgindi/Charts). 
+ * App uses [HanekeSwift](https://github.com/Haneke/HanekeSwift/tree/feature/swift-3) for image caching.
 
 ## Getting Started
 * Clone or download this repository and build using xcode 8 or later.
@@ -14,6 +15,7 @@ Get facebook App ID and App Secret by creating an application on facebook develo
 * [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) - Swift based OAuth library for iOS.
 * [OpenWeatherMap](http://openweathermap.org/api) - Weather API's.
 * [Charts](https://github.com/danielgindi/Charts) - Beautiful charts for iOS/tvOS/OSX! The Apple side of the crossplatform MPAndroidChart.
+* [HanekeSwift](https://github.com/Haneke/HanekeSwift/tree/feature/swift-3) - A lightweight generic cache for iOS written in Swift with extra love for images..
 
 ## Authors
 
