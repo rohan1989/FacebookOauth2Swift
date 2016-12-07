@@ -70,7 +70,12 @@ open class FacebookManager: NSObject {
             success: { credential, response, parameters in
                 
                 self.getFacebookPhotos(oauthswift, completionWithPhotos: {photosArray, error in
-                    completionWithPhotos(photosArray, NSError(domain: "", code: 222, userInfo: nil))
+                    if photosArray?.count != nil{
+                        completionWithPhotos(photosArray, NSError(domain: "", code: 222, userInfo: nil))
+                    }
+                    else{
+                        completionWithPhotos(nil, NSError(domain: (error?.localizedDescription)!, code: 111, userInfo: nil))
+                    }
                 })
                 
         }, failure: { error in

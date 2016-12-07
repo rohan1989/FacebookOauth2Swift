@@ -17,7 +17,6 @@
 		1C5362F41DF3F8080027C778 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5362F31DF3F8080027C778 /* FacebookManager.swift */; };
 		1C53630F1DF3FB580027C778 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5363001DF3FA790027C778 /* OAuthSwift.framework */; };
 		1C5363191DF4227C0027C778 /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5363181DF4227C0027C778 /* ParsingManager.swift */; };
-		1C53631C1DF4245E0027C778 /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
 		1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
 		1C53631F1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
 		1C5363201DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
@@ -26,6 +25,9 @@
 		1C68A2031DF6AAE4009A924C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C68A1FC1DF6AAD3009A924C /* Charts.framework */; };
 		1C68A2061DF6AD7A009A924C /* OpenWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A2051DF6AD7A009A924C /* OpenWeatherManager.swift */; };
 		1C68A2081DF6B213009A924C /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A2071DF6B213009A924C /* WeatherForecast.swift */; };
+		1C68A2091DF80051009A924C /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
+		1C68A20A1DF80052009A924C /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
+		1C68A20C1DF80071009A924C /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -518,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C68A20C1DF80071009A924C /* FacebookImage.swift in Sources */,
 				1C5362F41DF3F8080027C778 /* FacebookManager.swift in Sources */,
 				1C68A2081DF6B213009A924C /* WeatherForecast.swift in Sources */,
 				1C68A2061DF6AD7A009A924C /* OpenWeatherManager.swift in Sources */,
@@ -527,7 +530,6 @@
 				1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */,
 				1C68A1E81DF6A7BB009A924C /* GraphViewController.swift in Sources */,
 				1C5362C51DF2B7420027C778 /* AppDelegate.swift in Sources */,
-				1C53631C1DF4245E0027C778 /* FacebookImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C68A2091DF80051009A924C /* FacebookImage.swift in Sources */,
 				1C5362DA1DF2B7420027C778 /* FacebookOauth2SwiftTests.swift in Sources */,
 				1C53631F1DF495A10027C778 /* PhotosViewController.swift in Sources */,
 			);
@@ -544,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C68A20A1DF80052009A924C /* FacebookImage.swift in Sources */,
 				1C5362E51DF2B7420027C778 /* FacebookOauth2SwiftUITests.swift in Sources */,
 				1C5363201DF495A10027C778 /* PhotosViewController.swift in Sources */,
 			);

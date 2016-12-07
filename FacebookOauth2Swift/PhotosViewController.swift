@@ -18,7 +18,10 @@ class PhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
-        self.addImagesToScrollView()
+        
+        if imagesArray?.count != nil {
+            self.addImagesToScrollView()
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
