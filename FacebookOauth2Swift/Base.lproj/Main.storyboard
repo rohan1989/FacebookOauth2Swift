@@ -61,46 +61,90 @@
                     <connections>
                         <outlet property="activityIndicator" destination="uKA-mT-g1z" id="gFN-am-goS"/>
                         <outlet property="loginWithFacebookButton" destination="Zts-99-ENP" id="tJ7-tY-9ju"/>
-                        <segue destination="8gg-A7-qij" kind="show" identifier="showPhotosView" id="KBq-3R-2Ws"/>
+                        <segue destination="GST-5W-qrr" kind="show" identifier="showPhotosCollectionView" id="8sV-vA-EMm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2015.2" y="137.18140929535232"/>
         </scene>
-        <!--PHOTOS-->
-        <scene sceneID="0ZY-dR-KgC">
+        <!--Photos-->
+        <scene sceneID="KoC-ew-9Lq">
             <objects>
-                <viewController title="PHOTOS" id="8gg-A7-qij" customClass="PhotosViewController" customModule="FacebookOauth2Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Photos" id="GST-5W-qrr" customClass="PhotosCollectionViewController" customModule="FacebookOauth2Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xxw-OK-lDF"/>
-                        <viewControllerLayoutGuide type="bottom" id="qjX-5W-zZT"/>
+                        <viewControllerLayoutGuide type="top" id="4h9-fT-CnU"/>
+                        <viewControllerLayoutGuide type="bottom" id="bwT-ef-aay"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hUP-ax-r7P">
+                    <view key="view" contentMode="scaleToFill" id="xh9-Xq-Q6q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3D-4f-bDY">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-m7-3Cx">
+                                <rect key="frame" x="16" y="72" width="343" height="575"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </scrollView>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PAx-Si-FIR">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCellReuseIdentifier" id="PRg-Je-H4j" customClass="PhotosCollectionViewCell" customModule="FacebookOauth2Swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YRk-xR-ovB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="YRk-xR-ovB" firstAttribute="leading" secondItem="PRg-Je-H4j" secondAttribute="leading" id="SFq-Uf-cOz"/>
+                                            <constraint firstItem="YRk-xR-ovB" firstAttribute="top" secondItem="PRg-Je-H4j" secondAttribute="top" id="VoR-N7-jrh"/>
+                                            <constraint firstAttribute="trailing" secondItem="YRk-xR-ovB" secondAttribute="trailing" id="fRi-iK-c0f"/>
+                                            <constraint firstAttribute="bottom" secondItem="YRk-xR-ovB" secondAttribute="bottom" id="jlN-Yo-n5o"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="photoImageView" destination="YRk-xR-ovB" id="48x-ak-4QV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="GST-5W-qrr" id="HCS-Qz-VPe"/>
+                                    <outlet property="delegate" destination="GST-5W-qrr" id="wcg-kZ-Lhi"/>
+                                </connections>
+                            </collectionView>
+                            <imageView hidden="YES" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Piw-aj-1zr">
+                                <rect key="frame" x="16" y="72" width="343" height="575"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.36118459800000002" green="0.54058458269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="top" secondItem="Xxw-OK-lDF" secondAttribute="bottom" id="FrO-4c-vPK"/>
-                            <constraint firstItem="qjX-5W-zZT" firstAttribute="top" secondItem="Z3D-4f-bDY" secondAttribute="bottom" id="Rr3-vC-EBY"/>
-                            <constraint firstItem="Z3D-4f-bDY" firstAttribute="leading" secondItem="hUP-ax-r7P" secondAttribute="leading" id="ZAq-KV-MI8"/>
-                            <constraint firstAttribute="trailing" secondItem="Z3D-4f-bDY" secondAttribute="trailing" id="b4y-wV-zUh"/>
+                            <constraint firstItem="VfR-m7-3Cx" firstAttribute="leading" secondItem="xh9-Xq-Q6q" secondAttribute="leading" constant="16" id="8Ad-4W-FKg"/>
+                            <constraint firstAttribute="trailing" secondItem="Piw-aj-1zr" secondAttribute="trailing" constant="16" id="FeW-yL-iS3"/>
+                            <constraint firstItem="bwT-ef-aay" firstAttribute="top" secondItem="VfR-m7-3Cx" secondAttribute="bottom" constant="20" id="QLg-7r-3jj"/>
+                            <constraint firstAttribute="trailing" secondItem="VfR-m7-3Cx" secondAttribute="trailing" constant="16" id="Vua-hl-AnR"/>
+                            <constraint firstItem="Piw-aj-1zr" firstAttribute="top" secondItem="4h9-fT-CnU" secondAttribute="bottom" constant="8" id="ZAU-gm-Knx"/>
+                            <constraint firstItem="Piw-aj-1zr" firstAttribute="leading" secondItem="xh9-Xq-Q6q" secondAttribute="leading" constant="16" id="heZ-fQ-hHn"/>
+                            <constraint firstItem="bwT-ef-aay" firstAttribute="top" secondItem="Piw-aj-1zr" secondAttribute="bottom" constant="20" id="kS1-ne-VO9"/>
+                            <constraint firstItem="VfR-m7-3Cx" firstAttribute="top" secondItem="4h9-fT-CnU" secondAttribute="bottom" constant="8" id="kdL-qM-NQm"/>
                         </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageScrollView" destination="Z3D-4f-bDY" id="gjB-xj-dDt"/>
+                        <outlet property="popupImageView" destination="Piw-aj-1zr" id="arq-a7-6yE"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tw9-05-BZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1a-Lt-iz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2863.1999999999998" y="136.28185907046478"/>
+            <point key="canvasLocation" x="3772" y="-9.4452773613193415"/>
         </scene>
         <!--Facebook-->
         <scene sceneID="Uog-jz-aBg">
@@ -249,6 +293,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PDW-X1-dAH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="HoX-Nf-cXF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

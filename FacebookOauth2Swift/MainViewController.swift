@@ -9,7 +9,7 @@
 import UIKit
 
 struct MainViewControllerConstants {
-    static let photosSegueIdentifier = "showPhotosView"
+    static let photosCollectionSegueIdentifier = "showPhotosCollectionView"
 }
 class MainViewController: UIViewController {
 
@@ -29,11 +29,8 @@ class MainViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if MainViewControllerConstants.photosSegueIdentifier == segue.identifier {
-            let destinationViewController = segue.destination as! PhotosViewController
+            let destinationViewController = segue.destination as! PhotosCollectionViewController
             destinationViewController.imagesArray = sender as! Array<FacebookImage>?
-        }
     }
 
     // MARK: ---------- Private Functions ----------
@@ -46,7 +43,7 @@ class MainViewController: UIViewController {
      @return None.
      */
     private func seePhotosViewController(){
-            self.performSegue(withIdentifier: MainViewControllerConstants.photosSegueIdentifier, sender: self.imagesArray)
+        self.performSegue(withIdentifier: MainViewControllerConstants.photosCollectionSegueIdentifier, sender: self.imagesArray)
     }
     
     /**

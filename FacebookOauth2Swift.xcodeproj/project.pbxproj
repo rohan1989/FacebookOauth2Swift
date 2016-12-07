@@ -17,9 +17,6 @@
 		1C5362F41DF3F8080027C778 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5362F31DF3F8080027C778 /* FacebookManager.swift */; };
 		1C53630F1DF3FB580027C778 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5363001DF3FA790027C778 /* OAuthSwift.framework */; };
 		1C5363191DF4227C0027C778 /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5363181DF4227C0027C778 /* ParsingManager.swift */; };
-		1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
-		1C53631F1DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
-		1C5363201DF495A10027C778 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631D1DF495A10027C778 /* PhotosViewController.swift */; };
 		1C68A1E01DF6A547009A924C /* GraphRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A1DF1DF6A547009A924C /* GraphRootViewController.swift */; };
 		1C68A1E81DF6A7BB009A924C /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68A1E71DF6A7BB009A924C /* GraphViewController.swift */; };
 		1C68A2031DF6AAE4009A924C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C68A1FC1DF6AAD3009A924C /* Charts.framework */; };
@@ -28,6 +25,9 @@
 		1C68A2091DF80051009A924C /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
 		1C68A20A1DF80052009A924C /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
 		1C68A20C1DF80071009A924C /* FacebookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53631B1DF4245E0027C778 /* FacebookImage.swift */; };
+		1CC9522A1DF88E3400E27BA6 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC952291DF88E3400E27BA6 /* PhotosCollectionViewController.swift */; };
+		1CC9522C1DF88ED600E27BA6 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9522B1DF88ED600E27BA6 /* PhotosCollectionViewCell.swift */; };
+		1CC952681DF89C3A00E27BA6 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC9525F1DF89C2E00E27BA6 /* Haneke.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +129,41 @@
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
 		};
+		1CC9525E1DF89C2E00E27BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
+		1CC952601DF89C2E00E27BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6393C5F71C3B229200EB1FD8;
+			remoteInfo = "Haneke-tvOS";
+		};
+		1CC952621DF89C2E00E27BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		1CC952641DF89C2E00E27BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		1CC952661DF89C3600E27BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -149,12 +184,14 @@
 		1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = "OAuthSwift-master/OAuthSwift.xcodeproj"; sourceTree = "<group>"; };
 		1C5363181DF4227C0027C778 /* ParsingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParsingManager.swift; path = ParsingManager/ParsingManager.swift; sourceTree = "<group>"; };
 		1C53631B1DF4245E0027C778 /* FacebookImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacebookImage.swift; path = Models/FacebookImage.swift; sourceTree = "<group>"; };
-		1C53631D1DF495A10027C778 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		1C68A1DF1DF6A547009A924C /* GraphRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphRootViewController.swift; sourceTree = "<group>"; };
 		1C68A1E71DF6A7BB009A924C /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		1C68A2051DF6AD7A009A924C /* OpenWeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenWeatherManager.swift; path = OpenWeatherManager/OpenWeatherManager.swift; sourceTree = "<group>"; };
 		1C68A2071DF6B213009A924C /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherForecast.swift; path = Models/WeatherForecast.swift; sourceTree = "<group>"; };
+		1CC952291DF88E3400E27BA6 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		1CC9522B1DF88ED600E27BA6 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "HanekeSwift-feature-swift-3/Haneke.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC952681DF89C3A00E27BA6 /* Haneke.framework in Frameworks */,
 				1C68A2031DF6AAE4009A924C /* Charts.framework in Frameworks */,
 				1C53630F1DF3FB580027C778 /* OAuthSwift.framework in Frameworks */,
 			);
@@ -189,6 +227,7 @@
 			children = (
 				1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */,
 				1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */,
+				1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */,
 				1C5362C31DF2B7420027C778 /* FacebookOauth2Swift */,
 				1C5362D81DF2B7420027C778 /* FacebookOauth2SwiftTests */,
 				1C5362E31DF2B7420027C778 /* FacebookOauth2SwiftUITests */,
@@ -211,7 +250,8 @@
 			children = (
 				1C5362C41DF2B7420027C778 /* AppDelegate.swift */,
 				1C5362C61DF2B7420027C778 /* MainViewController.swift */,
-				1C53631D1DF495A10027C778 /* PhotosViewController.swift */,
+				1CC952291DF88E3400E27BA6 /* PhotosCollectionViewController.swift */,
+				1CC9522B1DF88ED600E27BA6 /* PhotosCollectionViewCell.swift */,
 				1C68A1DF1DF6A547009A924C /* GraphRootViewController.swift */,
 				1C68A1E71DF6A7BB009A924C /* GraphViewController.swift */,
 				1C5362C81DF2B7420027C778 /* Main.storyboard */,
@@ -301,6 +341,17 @@
 			name = OpenWeatherManager;
 			sourceTree = "<group>";
 		};
+		1CC952581DF89C2E00E27BA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC9525F1DF89C2E00E27BA6 /* Haneke.framework */,
+				1CC952611DF89C2E00E27BA6 /* Haneke.framework */,
+				1CC952631DF89C2E00E27BA6 /* HanekeTests.xctest */,
+				1CC952651DF89C2E00E27BA6 /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,6 +366,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1CC952671DF89C3600E27BA6 /* PBXTargetDependency */,
 				1C68A2021DF6AAE0009A924C /* PBXTargetDependency */,
 				1C53630E1DF3FB510027C778 /* PBXTargetDependency */,
 			);
@@ -402,6 +454,10 @@
 					ProjectRef = 1C68A1F51DF6AAD3009A924C /* Charts.xcodeproj */;
 				},
 				{
+					ProductGroup = 1CC952581DF89C2E00E27BA6 /* Products */;
+					ProjectRef = 1CC952571DF89C2E00E27BA6 /* Haneke.xcodeproj */;
+				},
+				{
 					ProductGroup = 1C5362F61DF3FA790027C778 /* Products */;
 					ProjectRef = 1C5362F51DF3FA790027C778 /* OAuthSwift.xcodeproj */;
 				},
@@ -486,6 +542,34 @@
 			remoteRef = 1C68A1FF1DF6AAD3009A924C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		1CC9525F1DF89C2E00E27BA6 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 1CC9525E1DF89C2E00E27BA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1CC952611DF89C2E00E27BA6 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 1CC952601DF89C2E00E27BA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1CC952631DF89C2E00E27BA6 /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 1CC952621DF89C2E00E27BA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1CC952651DF89C2E00E27BA6 /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 1CC952641DF89C2E00E27BA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -525,11 +609,12 @@
 				1C68A2081DF6B213009A924C /* WeatherForecast.swift in Sources */,
 				1C68A2061DF6AD7A009A924C /* OpenWeatherManager.swift in Sources */,
 				1C5362C71DF2B7420027C778 /* MainViewController.swift in Sources */,
+				1CC9522C1DF88ED600E27BA6 /* PhotosCollectionViewCell.swift in Sources */,
 				1C68A1E01DF6A547009A924C /* GraphRootViewController.swift in Sources */,
 				1C5363191DF4227C0027C778 /* ParsingManager.swift in Sources */,
-				1C53631E1DF495A10027C778 /* PhotosViewController.swift in Sources */,
 				1C68A1E81DF6A7BB009A924C /* GraphViewController.swift in Sources */,
 				1C5362C51DF2B7420027C778 /* AppDelegate.swift in Sources */,
+				1CC9522A1DF88E3400E27BA6 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +624,6 @@
 			files = (
 				1C68A2091DF80051009A924C /* FacebookImage.swift in Sources */,
 				1C5362DA1DF2B7420027C778 /* FacebookOauth2SwiftTests.swift in Sources */,
-				1C53631F1DF495A10027C778 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +633,6 @@
 			files = (
 				1C68A20A1DF80052009A924C /* FacebookImage.swift in Sources */,
 				1C5362E51DF2B7420027C778 /* FacebookOauth2SwiftUITests.swift in Sources */,
-				1C5363201DF495A10027C778 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +658,11 @@
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = 1C68A2011DF6AAE0009A924C /* PBXContainerItemProxy */;
+		};
+		1CC952671DF89C3600E27BA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Haneke-iOS";
+			targetProxy = 1CC952661DF89C3600E27BA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -616,6 +704,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -665,6 +754,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
