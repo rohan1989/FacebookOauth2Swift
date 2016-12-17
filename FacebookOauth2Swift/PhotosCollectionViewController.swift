@@ -7,19 +7,20 @@
 //
 
 import UIKit
-import Haneke
 
 class PhotosCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     let reuseIdentifier = "collectionViewCellReuseIdentifier"
     var imagesArray:Array<FacebookImage>?
     var blurEffectView:UIVisualEffectView!
+    var isImageCacheCleared:Bool = false
+    
+    
     @IBOutlet weak var popupImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
-        
         popupImageView.layer.cornerRadius = 8
         
         let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.popupImageViewTapGesture(_:)))
@@ -74,7 +75,12 @@ class PhotosCollectionViewController: UIViewController, UICollectionViewDataSour
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! PhotosCollectionViewCell
         let facebookImage:FacebookImage = imagesArray![indexPath.item]
-        cell.photoImageView.hnk_setImageFromURL(URL(string: facebookImage.imageSource!)!)
+        if !isImageCacheCleared {
+            cell.photoImageView.clearImageCache()
+            isImageCacheCleared = true
+        }
+        cell.photoImageView.asyncDownload(urlString: facebookImage.imageSource, cell: cell, index: indexPath)
+        cell.photoImageView.tag = indexPath.item
         cell.backgroundColor = UIColor.black
         cell.layer.borderColor = UIColor.white.cgColor
         cell.layer.borderWidth = 1
